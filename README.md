@@ -4,6 +4,7 @@
 
 - View
 - ScrollView
+- FlatList
 - SafeAreaView
 - Modal
 - TouchableOpacity
@@ -11,16 +12,23 @@
 - Image
 - Text
 
-# methods/hooks used
+## methods/hooks used
 
 - useState
+- Class Component (constructor, render, componentDidMount)
+- fetch API (Promise)
 
-# CSS
+## CSS
 
 - flex
 - box-model (padding, margin, border)
 - & general styles - colors, backgrounds
 
-# UI Ref for Future design
+## Libraries Used
+- react-nativigation (version 5)
+  - react-navigaton/stack
+- react-native-paper
+
+## UI Ref for Future design
 
 - https://www.behance.net/gallery/110142467/Plants-App-Design?tracking_source=search_projects_recommended%7Cplants%20mobile%20application%20ui%20design
