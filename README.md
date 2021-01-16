@@ -53,4 +53,6 @@
 
 ## UI Ref for Future design
 
+- https://dribbble.com/shots/14667635-Plants-Store-App
+- https://dribbble.com/shots/9894622-Watering-Plants-App
 - https://www.behance.net/gallery/110142467/Plants-App-Design?tracking_source=search_projects_recommended%7Cplants%20mobile%20application%20ui%20design
