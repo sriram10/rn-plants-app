@@ -22,8 +22,10 @@ import {
   TouchableWithoutFeedback,
 } from 'react-native';
 import { Button } from 'react-native-paper';
+import Icon from '../components/Icon';
 // import Button from './components/Button';
 import { ASSETS } from '../constants/imageAssets';
+import { COLORS, SIZES } from '../constants/theme';
 
 const width = Dimensions.get('window').width;
 const height = Dimensions.get('window').height;
@@ -101,7 +103,11 @@ const Home = ({ navigation }) => {
       {/* <StatusBar barStyle="dark-content"/>  */}
       {/* children */}
       <View style={styles.container}>
-        <Text>Menu</Text>
+        <TouchableOpacity onPress={() => {
+          navigation.openDrawer();
+        }}>
+          <Icon name="menu" color={COLORS.black} size={SIZES.h5} />
+        </TouchableOpacity>
         <Text style={{ fontSize: 24 }}>Title</Text>
         <Text>Login</Text>
       </View>
@@ -116,7 +122,7 @@ const Home = ({ navigation }) => {
       </View>
       <View style={{ padding: 20 }}>
         <Button mode="contained" onPress={() => {
-          navigation.navigate("PostScreen");
+          navigation.navigate("StoreList");
         }}>View Posts</Button>
       </View>
       <ScrollView>

@@ -42,7 +42,7 @@ class PostList extends Component {
         renderItem={({ item }) => {
           return (
             <Card elevation={4} style={{ marginBottom: 10 }} onPress={() => {
-              this.props.navigation.navigate("PostDetailsScreen")
+              this.props.navigation.navigate("StoreDetail")
             }}>
               <Card.Content>
                 <Title>{item.title}</Title>
