@@ -17,14 +17,14 @@
 		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		2DCD954D1E0B4F2C00145EB5 /* plantsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* plantsTests.m */; };
 		493AF646C3217D9AC45371D8 /* libPods-plants-plantsTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 425A32D32C237ECD1D92C71F /* libPods-plants-plantsTests.a */; };
-		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
-		8B7E933720E18004DE72A98B /* libPods-plants-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 77974BCAFB35E4CCB31AECAE /* libPods-plants-tvOS.a */; };
-		EB9E68344A084C03800AC936 /* libPods-plants.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 13CE1F0703DA5334EB041B1A /* libPods-plants.a */; };
 		5D52AC928D064673A8491009 /* Poppins-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 03452C41483B4FF1BB974279 /* Poppins-ExtraLight.ttf */; };
-		848F37972A7F4CCAB8DD4CAC /* Poppins-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AEF118C379264585B68732B8 /* Poppins-Light.ttf */; };
-		B66BE3F8D528453D9A472B32 /* Poppins-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B1644B7B86A3474481194130 /* Poppins-Medium.ttf */; };
-		8300C46E8DE542A5B6EAE98B /* Poppins-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D3428CEBDC664CE89F769CF8 /* Poppins-Regular.ttf */; };
 		677944316F67491D97FB85DF /* plans.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AF7BD0A7B6504159A0E66A55 /* plans.ttf */; };
+		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		8300C46E8DE542A5B6EAE98B /* Poppins-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D3428CEBDC664CE89F769CF8 /* Poppins-Regular.ttf */; };
+		848F37972A7F4CCAB8DD4CAC /* Poppins-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AEF118C379264585B68732B8 /* Poppins-Light.ttf */; };
+		8B7E933720E18004DE72A98B /* libPods-plants-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 77974BCAFB35E4CCB31AECAE /* libPods-plants-tvOS.a */; };
+		B66BE3F8D528453D9A472B32 /* Poppins-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B1644B7B86A3474481194130 /* Poppins-Medium.ttf */; };
+		EB9E68344A084C03800AC936 /* libPods-plants.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 13CE1F0703DA5334EB041B1A /* libPods-plants.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +49,7 @@
 		00E356EE1AD99517003FC87E /* plantsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = plantsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* plantsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = plantsTests.m; sourceTree = "<group>"; };
+		03452C41483B4FF1BB974279 /* Poppins-ExtraLight.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-ExtraLight.ttf"; path = "../assets/fonts/Poppins-ExtraLight.ttf"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* plants.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = plants.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = plants/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = plants/AppDelegate.m; sourceTree = "<group>"; };
@@ -66,17 +67,16 @@
 		8BBE4078A6B54E7B62224E59 /* libPods-plants-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-plants-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2165D24FDD7DC3134CBAE2D /* Pods-plants.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-plants.release.xcconfig"; path = "Target Support Files/Pods-plants/Pods-plants.release.xcconfig"; sourceTree = "<group>"; };
 		A44C79C2CC1DCE44EFF411D7 /* Pods-plants-plantsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-plants-plantsTests.debug.xcconfig"; path = "Target Support Files/Pods-plants-plantsTests/Pods-plants-plantsTests.debug.xcconfig"; sourceTree = "<group>"; };
+		AEF118C379264585B68732B8 /* Poppins-Light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-Light.ttf"; path = "../assets/fonts/Poppins-Light.ttf"; sourceTree = "<group>"; };
+		AF7BD0A7B6504159A0E66A55 /* plans.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = plans.ttf; path = ../assets/fonts/plans.ttf; sourceTree = "<group>"; };
+		B1644B7B86A3474481194130 /* Poppins-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-Medium.ttf"; path = "../assets/fonts/Poppins-Medium.ttf"; sourceTree = "<group>"; };
+		D3428CEBDC664CE89F769CF8 /* Poppins-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-Regular.ttf"; path = "../assets/fonts/Poppins-Regular.ttf"; sourceTree = "<group>"; };
 		DD46CBF0E366EFB7CC6F8E64 /* Pods-plants-plantsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-plants-plantsTests.release.xcconfig"; path = "Target Support Files/Pods-plants-plantsTests/Pods-plants-plantsTests.release.xcconfig"; sourceTree = "<group>"; };
 		E0FAB547F9223C5B919678CC /* Pods-plants-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-plants-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-plants-tvOSTests/Pods-plants-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
 		E1A10E14BD825708BE7731C3 /* Pods-plants.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-plants.debug.xcconfig"; path = "Target Support Files/Pods-plants/Pods-plants.debug.xcconfig"; sourceTree = "<group>"; };
 		EAE45ECD543302ADD0C3C915 /* Pods-plants-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-plants-tvOS.release.xcconfig"; path = "Target Support Files/Pods-plants-tvOS/Pods-plants-tvOS.release.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
-		03452C41483B4FF1BB974279 /* Poppins-ExtraLight.ttf */ = {isa = PBXFileReference; name = "Poppins-ExtraLight.ttf"; path = "../assets/fonts/Poppins-ExtraLight.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		AEF118C379264585B68732B8 /* Poppins-Light.ttf */ = {isa = PBXFileReference; name = "Poppins-Light.ttf"; path = "../assets/fonts/Poppins-Light.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		B1644B7B86A3474481194130 /* Poppins-Medium.ttf */ = {isa = PBXFileReference; name = "Poppins-Medium.ttf"; path = "../assets/fonts/Poppins-Medium.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		D3428CEBDC664CE89F769CF8 /* Poppins-Regular.ttf */ = {isa = PBXFileReference; name = "Poppins-Regular.ttf"; path = "../assets/fonts/Poppins-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		AF7BD0A7B6504159A0E66A55 /* plans.ttf */ = {isa = PBXFileReference; name = "plans.ttf"; path = "../assets/fonts/plans.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -471,6 +471,7 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-plants/Pods-plants-resources.sh",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
 				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/AntDesign.ttf",
 				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Entypo.ttf",
 				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/EvilIcons.ttf",
@@ -491,6 +492,7 @@
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AntDesign.ttf",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Entypo.ttf",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/EvilIcons.ttf",
@@ -521,6 +523,7 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-plants-plantsTests/Pods-plants-plantsTests-resources.sh",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
 				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/AntDesign.ttf",
 				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Entypo.ttf",
 				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/EvilIcons.ttf",
@@ -541,6 +544,7 @@
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AntDesign.ttf",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Entypo.ttf",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/EvilIcons.ttf",

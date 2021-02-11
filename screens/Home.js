@@ -6,7 +6,7 @@
  * @flow strict-local
  */
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import {
   SafeAreaView,
   StyleSheet,
@@ -20,6 +20,8 @@ import {
   TouchableOpacity,
   TouchableHighlight,
   TouchableWithoutFeedback,
+  Pressable,
+  Alert,
 } from 'react-native';
 import { Button } from 'react-native-paper';
 import Icon from '../components/Icon';
@@ -30,7 +32,7 @@ import { COLORS, SIZES } from '../constants/theme';
 const width = Dimensions.get('window').width;
 const height = Dimensions.get('window').height;
 
-const data = [
+const data1 = [
   {
     title: "Plant A",
     description: "Some content",
@@ -95,7 +97,54 @@ const bannerImageUrl = 'https://images.unsplash.com/photo-1507290439931-a861b5a3
 
 const Home = ({ navigation }) => {
   const [showModal, setShowModal] = useState(false);
-  const [activeItem, setActiveItem] = useState({ title: 'test' })
+  const [activeItem, setActiveItem] = useState({ title: 'test' });
+  const [data, setData] = useState([]);
+  const [categories, setCategories] = useState([]);
+  const [selectedCategory, setSelectedCategory] = useState({});
+  const [filteredPosts, setFilteredPosts] = useState([]);
+  const [posts, setPosts] = useState([]);
+
+  useEffect(() => {
+    fetch('YOUR_API_URL')
+      .then(res => {
+        return res.json();
+      })
+      .then(async response => {
+        if(response.success) {
+          await setCategories(response.data.categories);
+          await setPosts(response.data.recent_posts);
+        } else {
+          console.log('Unable to fetch listing');
+        }
+      })
+      .catch(err => {
+        Alert.alert('Enter Proper API Details');
+        console.log('Error >> fetching list data');
+      })
+    fetch('https://jsonplaceholder.typicode.com/posts')
+      .then(res => {
+        return res.json()
+      })
+      .then(response => {
+        // console.log('API DATA >>', data);
+        setData(response);
+      })
+      .catch(err => {
+        console.log('API ERROR >> ', err)
+      })
+  }, [])
+
+  getPostByCategory = (cat) => {
+    setSelectedCategory(cat);
+    const fp = posts.filter(p => {
+      return p.category.term_id === cat.term_id
+    })
+    // setFilteredPosts(fp);
+    navigation.navigate("StoreList", {
+      posts: fp,
+      category: cat
+    });
+  }
   
   return (
     <SafeAreaView style={styles.wrapper}>
@@ -121,24 +170,56 @@ const Home = ({ navigation }) => {
         />
       </View>
       <View style={{ padding: 20 }}>
+        <ScrollView horizontal>
+          {
+            categories.map(cat => {
+              return (
+                <TouchableOpacity
+                  key={cat.term_id}
+                  style={[{ padding: 20 }, selectedCategory.term_id === cat.term_id ? { backgroundColor: '#f1f1f1' } : {}]}
+                  onPress={() => { getPostByCategory(cat); }}>
+                  <Text>{cat.name}</Text>
+                </TouchableOpacity>
+              )
+            })
+          }
+        </ScrollView>
         <Button mode="contained" onPress={() => {
           navigation.navigate("StoreList");
         }}>View Posts</Button>
       </View>
       <ScrollView>
         {
-          [...data, ...data, ...data, ...data].map((item, index) => {
-            return (
-              <TouchableOpacity key={index} style={styles.listItem} onPress={() => {
-                setActiveItem(item)
-                setShowModal(true)
-                // navigation.navigate("PostScreen");
-                }}>
-                <Text>{item.title} - {index}</Text>
-                <Text>{item.description}</Text>
-              </TouchableOpacity>
-            )
-          })
+          filteredPosts.length ? (
+            filteredPosts.map(post => {
+              return (
+                <View key={post.ID} style={styles.listItem}>
+                  <Text style={{ fontWeight: 'bold' }}>{post.post_title}</Text>
+                  <Text>Posted by: {post.post_name}</Text>
+                </View>
+              )
+            })
+          ) : (
+            <View>
+              {
+                selectedCategory.term_id ? <Text>No Posts Found</Text> : <Text>No Category selected</Text>
+              }
+            </View>
+          )
+        }
+        {
+          // data.map((item, index) => {
+          //   return (
+          //     <TouchableOpacity key={index} style={styles.listItem} onPress={() => {
+          //       setActiveItem(item)
+          //       setShowModal(true)
+          //       // navigation.navigate("PostScreen");
+          //       }}>
+          //       <Text style={{ fontWeight: 'bold' }}>{item.title}</Text>
+          //       <Text>{item.body}</Text>
+          //     </TouchableOpacity>
+          //   )
+          // })
         }
       </ScrollView>
       <Modal

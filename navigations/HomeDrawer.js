@@ -7,7 +7,7 @@ const Drawer = createDrawerNavigator();
 
 const HomeDrawer = () => {
   return (
-    <Drawer.Navigator>
+    <Drawer.Navigator drawerPosition="right">
       <Drawer.Screen name="StoreHome" component={StoreStack} options={{ title: 'Stores' }} />
       <Drawer.Screen name="About" component={Home} options={{ title: "About us" }} />
       <Drawer.Screen name="Contact" component={Home} options={{ title: "Contact us" }} />
